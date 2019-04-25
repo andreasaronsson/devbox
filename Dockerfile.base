@@ -1,0 +1,6 @@
+FROM fedora:latest
+
+RUN dnf install -y git emacs-nox bc graphviz wget yum-utils docker-io docker-compose \
+which make flex python-unittest2 ncompress nodejs \
+protobuf-static PyYAML terraform && dnf upgrade -y && dnf clean all
+RUN ln -sf /usr/share/zoneinfo/Europe/Stockholm /etc/localtime
