@@ -1,4 +1,4 @@
-FROM devbox:latest
+FROM devbox:8
 
 USER root
 ENV USER=$USER USER_ID=$USER_ID LANG=en_IE.UTF-8
